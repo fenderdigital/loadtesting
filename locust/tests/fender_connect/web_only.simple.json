@@ -1,0 +1,232 @@
+[
+  {
+    "path": "/",
+    "comment": "The feed.",
+    "login": true,
+    "weight": 25
+  },
+  {
+    "path": "/",
+    "comment": "The feed (logged out).",
+    "login": false,
+    "weight": 25
+  },
+  {
+    "path": "/profile/info",
+    "comment": "Disabled (Jira COM-258). Should redirect to signin",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/profile/info",
+    "comment": "Disabled (Jira COM-258). Should redirect to signin",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/profile/product-registration",
+    "comment": "Ignore, no content.",
+    "login": true,
+    "weight": 0
+  },
+  {
+    "path": "/profile/product-registration/serial-search",
+    "comment": "Form to search for an owned product.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/product-registration/serial-search-results",
+    "comment": "Search results page (empty since it's being hit directly.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/product-registration/create-gear",
+    "comment": "Page to add product manually.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/product-registration/product-registered/undefined_id",
+    "comment": "Ignored. Result page seen after adding gear.",
+    "weight": 0
+  },
+  {
+    "path": "/profile/user-gear",
+    "comment": "The user gear list.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/create-gear",
+    "comment": "Ignore, don't think this is real.",
+    "weight": 0
+  },
+  {
+    "path": "/profile/loading",
+    "comment": "spinner/intermediary page.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/subscriptions",
+    "comment": "Ignore, not a real page.",
+    "weight": 0
+  },
+  {
+    "path": "/profile/subscriptions/billing",
+    "comment": "Subscription info.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/subscriptions/billing/update",
+    "comment": "View for updating credit card info.",
+    "weight": 1
+  },
+  {
+    "path": "/profile/subscriptions/transactions",
+    "comment": "Transaction history.",
+    "weight": 1
+  },
+  {
+    "path": "/signin",
+    "comment": "Signin page.",
+    "weight": 1
+  },
+  {
+    "path": "/register",
+    "comment": "Signup page. Redirect is broken when logged in (Jira COM-258)",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/forgot-password",
+    "comment": "Password page. Redirect is broken when logged in (COM-258)",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/articles/tech-talk/how-the-s-1-switch-gives-you-more-tonal-options?tag=electric",
+    "comment": "An article page.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/tags/electric",
+    "comment": "Feed page for the a tag",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/categories/tech-talk",
+    "comment": "Feed for a category",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/terms-of-use",
+    "comment": "Should redirect to pages/terms-of-use.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/privacy",
+    "comment": "Disabled (Jira COM-258). Should redirect to pages/privacy.",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/password-reset",
+    "comment": "Ignore. Linked from an email, requires a token param.",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/products/electric-guitars",
+    "comment": "A product page.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/products/electric-guitars/stratocaster",
+    "comment": "Products page for a specific model.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/products/electric-guitars/stratocaster/american-professional",
+    "comment": "Products page for a specific platform.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/online-guitar-tuner",
+    "comment": "Tuner selection page.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/online-guitar-tuner/electric-guitar-tuning",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/online-guitar-tuner/acoustic-guitar-tuning",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/online-guitar-tuner/bass-guitar-tuning",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/pages/terms-of-use",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/apps/tone-app-amp-controller",
+    "comment": "Page for the Tone app.",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/product-registration",
+    "comment": "Disabled (Jira COM-258). Should redirect to signin",
+    "weight": 0
+  },
+  {
+    "path": "/product-registration/serial-search",
+    "comment": "Logged out product search page",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/product-registration/serial-search-results",
+    "comment": "Ignore. Result of a logged out search.",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/product-registration/create-gear",
+    "comment": "Disabled (Jira COM-258). Logged out version of create-gear",
+    "login": false,
+    "weight": 0
+  },
+  {
+    "path": "/sdfknsdgzzxzz",
+    "comment": "Should redirect to 404/sdfknsdgzzxzz",
+    "expected_failure": 404,
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/500",
+    "comment": "Error/maintenance page",
+    "login": false,
+    "weight": 1
+  },
+  {
+    "path": "/health",
+    "comment": "Ignore.",
+    "login": false,
+    "weight": 0
+  }
+]
